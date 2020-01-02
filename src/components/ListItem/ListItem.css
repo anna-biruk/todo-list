@@ -1,0 +1,9 @@
+.text--crossed{
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
+.checkbox{
+    transform: scale(1.8);
+    margin-right: 10px;
+}
