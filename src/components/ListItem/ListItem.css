@@ -1,9 +1,26 @@
-.text--crossed{
+.text--crossed {
     text-decoration: line-through;
     color: gray;
     font-style: italic;
 }
-.checkbox{
+
+.checkbox {
     transform: scale(1.8);
     margin-right: 10px;
+}
+
+.imgEdit {
+    width: 22px;
+    height: 26px;
+    margin-left: 20px;
+}
+
+.imgDelete {
+    width: 30px;
+    height: 25px;
+}
+.listItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
