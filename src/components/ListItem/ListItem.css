@@ -24,3 +24,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.edit{
+    width: 270px;
+    font-size: 25px;
+}

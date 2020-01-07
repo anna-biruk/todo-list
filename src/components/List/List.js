@@ -39,17 +39,21 @@ function List() {
         setValue(event.target.value);
     };
     const handleCreate = () => {
-        setArray([...array, {toDo: value,id:value}]);
+        setArray([...array, {toDo: value, id: value}]);
         setValue('');
     };
     const removeItem = (id) => {
-        console.log(id);
-        const newArray = array.filter((element)=>{
-            if (element.id===id){
-                return false;
-            } else {
-                return  true;
+        const newArray = array.filter((element) => {
+            return element.id !== id;
+        })
+        setArray(newArray);
+    }
+    const updateItem = (id, newText) => {
+        const newArray = array.map((element) => {
+            if (element.id === id) {
+                element.toDo = newText;
             }
+            return element;
         })
         setArray(newArray);
     }
@@ -59,7 +63,7 @@ function List() {
             {
                 array.map((element) => {
                     return (
-                            <ListItem item={element.toDo} id={element.id} handleDelete={removeItem}/>
+                        <ListItem item={element.toDo} id={element.id} handleDelete={removeItem} handleEdit={updateItem}/>
                     )
                 })
             }
