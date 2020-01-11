@@ -1,7 +1,13 @@
- .menu {
-     background-color: cornflowerblue;
-     padding: 7px;
-     font-size: 37px;
-     text-align: center;
-     color: white;
+.menu {
+    background-color: cornflowerblue;
+    padding: 7px;
+    font-size: 37px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button{
+     font-size: 23px;
 }

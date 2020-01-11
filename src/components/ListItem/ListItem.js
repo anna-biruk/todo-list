@@ -52,7 +52,7 @@ function ListItem({item, id, handleDelete,handleEdit}) {
                     </div>
                     <div>
                         <img src={ImgEdit} className="imgEdit" alt="" onClick={handleEditingClick}/>
-                        <img src={ImgDelete} className="imgDelete" onClick={handleClick}/>
+                        <img src={ImgDelete} className="imgDelete" alt="" onClick={handleClick}/>
                     </div>
                 </>
             )}
